@@ -31,5 +31,8 @@ $ git clone https://github.com/google/go-genproto.git $GOPATH/src/google.golang.
 $ cd $GOPATH/src/
 $ go install google.golang.org/grpc
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3d117c9b92695dafd6a50dae2174a96959cc2e07
 ```
