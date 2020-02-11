@@ -8,9 +8,9 @@ import (
 func defer_func() {
 	//栈 先进后出
 	defer func() {
-		if p:=recover(); p!=nil {
-			fmt.Println(p)
-		}
+		//if p:=recover(); p!=nil {
+		//	fmt.Println(p)
+		//}
 		fmt.Println("1")
 	}()
 	defer func() { fmt.Println("2")}()
@@ -28,6 +28,6 @@ func multi_defer() {
 }
 
 func TestDefer() {
-	//defer_func()
-	multi_defer()
+	defer_func()
+	//multi_defer()
 }
