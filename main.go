@@ -17,5 +17,6 @@ func main() {
 	//demo.TestVariableFunc()
 	//demo.TestAdd()
 	//demo.TestPrintValue()
-	demo.TestDefer2()
+	//demo.TestDefer2()
+	demo.TestMapUpdate()
 }
