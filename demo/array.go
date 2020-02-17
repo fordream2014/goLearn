@@ -8,9 +8,10 @@ func TestArray() {
 		if k + 1 < len(arr) {
 			arr[k+1] = arr[k+1] + 1
 		}
-		fmt.Printf("%v-%v ", v, arr[k])
+		fmt.Printf("%v-%v \n", v, arr[k])
 	}
 	fmt.Println()
+	return
 	//初始化切片
 	slice := make([]int, 5, 8)
 	fmt.Println(slice)
