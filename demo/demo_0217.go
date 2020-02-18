@@ -19,6 +19,21 @@ func TestSlice001() {
 	}
 	fmt.Println("r = ", r)
 	fmt.Println("a = ", a)
+
+	fmt.Println()
+
+	var b = []int{1, 2, 3, 4, 5}
+	var m [5]int
+
+	//原因是for range 时会使用 b 的副本参与循环，len仍然是5
+	for i, v := range b {
+		if i == 0 {
+			b = append(b, 6, 7)
+		}
+		m[i] = v
+	}
+	fmt.Println("m = ", m)
+	fmt.Println("b = ", b)
 }
 
 func TestMap001() {
@@ -175,7 +190,7 @@ func Test021709() {
 	show := new(Show)
 	temp := make(Param)
 	show.Param = &temp
-	show.Param["name"] = 1
+	//show.Param["name"] = 1
 
 
 }

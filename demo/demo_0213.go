@@ -29,7 +29,7 @@ func (u *User) speak() {
 }
 
 type Admin struct {
-	*User
+	User
 	Level string
 }
 
@@ -51,8 +51,8 @@ func gotospeak(speaker Speaker) {
 
 func TestSpeak() {
 
-	admin := Admin{
-		User: &User{
+	admin := &Admin{
+		User: User{
 			Name: "xugaung",
 			Email: "xuguang5@sina.com",
 		},
