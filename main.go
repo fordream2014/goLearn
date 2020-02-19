@@ -18,5 +18,5 @@ func main() {
 	//demo.TestAdd()
 	//demo.TestPrintValue()
 	//demo.TestDefer2()
-	demo.Test021803()
+	demo.TestSynOnce()
 }
